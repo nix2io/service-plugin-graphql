@@ -1,4 +1,4 @@
-<p align="center"><img height="220px" src="https://i.imgur.com/clABU3a.png" alt="Logo" /><p>
+<p align="center"><img height="220px" src="https://i.imgur.com/GRvWj3S.png" alt="Logo" /><p>
 
 <p align="center">
   <strong>GraphQL Service Plugin</strong><br />
