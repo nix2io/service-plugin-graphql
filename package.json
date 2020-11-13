@@ -1,11 +1,11 @@
 {
-    "name": "@nix2/package-name",
-    "version": "1.0.0",
-    "description": "PACKAGE_DESCRIPTION",
+    "name": "@nix2/service-plugin-graphql",
+    "version": "1.0.1",
+    "description": "Create GraphQL services with this plugin.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
-    "repository": "https://github.com/nix2io/package-template.git",
-    "author": "Name <name@nix2.io>",
+    "repository": "https://github.com/nix2io/service-plugin-graphql.git",
+    "author": "Max Koon <maxk@nix2.io>",
     "license": "CC-BY-1.0",
     "private": false,
     "scripts": {
@@ -13,8 +13,7 @@
         "test-format": "prettier --check ./src/**",
         "test": "mocha -r ts-node/register tests/**",
         "lint": "eslint src/**",
-        "prepublish": "tsc",
-        "publish": "npm publish"
+        "prepublish": "tsc"
     },
     "devDependencies": {
         "@types/mocha": "8.0.4",
@@ -30,5 +29,9 @@
     },
     "files": [
         "dist"
-    ]
+    ],
+    "dependencies": {
+        "@nix2/service-core": "1.0.10",
+        "@nix2/service-plugin-typescript": "1.0.4"
+    }
 }
