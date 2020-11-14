@@ -3,11 +3,18 @@ import { ApolloServer } from "apollo-server-express";
 import * as Express from "express";
 import { buildSchema, Query, Resolver } from "type-graphql";
 
+/**
+ * Resolver for Hello.
+ */
 @Resolver()
 class HelloResolver {
+    /**
+     * Return hi world.
+     * @returns {string} Hi World.
+     */
     @Query(() => String)
     async hello() {
-        return "hi world";
+        return 'hi world';
     }
 }
 
