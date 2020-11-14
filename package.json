@@ -13,6 +13,7 @@
         "test-format": "prettier --check ./src/**",
         "test": "mocha -r ts-node/register tests/**",
         "lint": "eslint src/**",
+        "mk-docs": "typedoc --name \"GraphQL Plugin Documentation\" && touch ./docs/.nojekyll",
         "prepublish": "tsc"
     },
     "devDependencies": {
@@ -25,13 +26,14 @@
         "mocha": "8.2.1",
         "prettier": "2.1.2",
         "ts-node": "9.0.0",
+        "typedoc": "^0.19.2",
         "typescript": "4.0.5"
     },
     "files": [
         "dist"
     ],
     "dependencies": {
-        "@nix2/service-core": "1.0.10",
+        "@nix2/service-core": "1.0.11",
         "@nix2/service-plugin-typescript": "1.0.4"
     }
 }
