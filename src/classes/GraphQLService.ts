@@ -36,7 +36,12 @@ export default class GraphQLService extends TypescriptService {
      * @param {Array<Schema>}    schemas List of service schemas.
      */
     constructor(context: ExecutionContext, info: Info, schemas: Schema[]) {
-        super(context, info, 'graphql', schemas);
+        // You need the any because for some reason,
+        // private properties from the service-core are not considered the same.
+        // It would be nice to fix this some time in the future but I don't think I can.
+        // This is starting to show the limitations of OOP with TS. :/
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        super(context, info as any, 'graphql', schemas as any);
     }
 
     /**
