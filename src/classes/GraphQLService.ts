@@ -76,9 +76,9 @@ export default class GraphQLService extends TypescriptService {
     /**
      * Make a `GraphQLService` object.
      * @static
-     * @param   {MakeObjectType}       data Data for the `GraphQLService` object.
-     * @param   {User}                 user User instance.
-     * @returns {GraphQLServiceType} New `GraphQLService` object.
+     * @param   {InitializeServiceDataType} data Data for the `GraphQLService` object.
+     * @param   {User}                      user User instance.
+     * @returns {GraphQLServiceType}             New `GraphQLService` object.
      */
     static makeObject(
         data: InitializeServiceDataType,
